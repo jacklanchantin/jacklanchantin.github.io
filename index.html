@@ -96,12 +96,24 @@ h1{
   font-family: 'ProductSans';
   src:  url('/assets/ProductSans-Thin.ttf') format('truetype'),
   }
-
-  html *
-  {
-    font-family: 'Lato', sans-serif;
-    text-rendering: optimizeLegibility;
+	
+var ua = navigator.userAgent.toLowerCase(); 
+if (ua.indexOf('safari') != -1) { 
+  if (ua.indexOf('chrome') > -1) {
+      html *
+	  {
+	    font-family: 'Open Sans', sans-serif;
+	    text-rendering: optimizeLegibility;
+	  }
+  } else {
+    html *
+	  {
+	    font-family: 'Noto Sans', sans-serif;
+	  }
   }
+}
+	
+
 
    /* @font-face {
    font-family: 'Baloo 2';
@@ -159,11 +171,6 @@ h1{
 
 <body>
 
-
-<!-- <div class="navbar">
-    <br>
-</div> -->
-<!-- <div id="grad1"> -->
 
 <p>
 
