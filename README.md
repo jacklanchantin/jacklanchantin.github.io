@@ -1,1 +1,1 @@
-jack lanchantin homepage
+jack lanchantin academic homepage
