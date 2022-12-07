@@ -1,1 +1,2 @@
-jack lanchantin academic homepage
+Jack Lanchantin
+Meta AI
