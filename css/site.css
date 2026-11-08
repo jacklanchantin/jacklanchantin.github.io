@@ -1,6 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+
 :root {
   color-scheme: light;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   color: #27303d;
   background: #fff;
 }
@@ -30,24 +32,6 @@ a:focus-visible { outline: 2px solid #25528c; outline-offset: 3px; }
 
 .skip-link:focus { top: 1rem; }
 
-.site-header { border-bottom: 1px solid #e8ebef; }
-
-.header-content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1.5rem;
-  padding-block: 1.15rem;
-}
-
-.site-name { font-weight: 650; color: inherit; text-decoration: none; }
-
-nav { display: flex; flex-wrap: wrap; gap: 1.4rem; font-size: .94rem; }
-
-nav a { color: #4b5563; text-decoration: none; }
-
-nav a[aria-current="page"] { color: #27303d; font-weight: 650; }
-
 .home-content { padding-block: clamp(3.5rem, 12vw, 7rem); font-size: 1.1rem; }
 
 h1 { margin: 0 0 1.3rem; font-size: clamp(2rem, 5vw, 2.8rem); letter-spacing: -.035em; line-height: 1.2; }
@@ -56,7 +40,9 @@ h1 { margin: 0 0 1.3rem; font-size: clamp(2rem, 5vw, 2.8rem); letter-spacing: -.
 
 .publications-content { padding-block: 3rem 5rem; }
 
-.publications-content > p { margin: -.5rem 0 2rem; color: #596273; }
+.publications-content > p:not(.back-home) { margin: -.5rem 0 2rem; color: #596273; }
+
+.back-home { margin-top: 2rem; }
 
 .publication-list { list-style: none; margin: 0; padding: 0; }
 
@@ -68,11 +54,10 @@ h1 { margin: 0 0 1.3rem; font-size: clamp(2rem, 5vw, 2.8rem); letter-spacing: -.
 
 .publication-list p.title { margin-bottom: .35rem; }
 
-.publication-list strong { font-weight: 650; }
+.publication-list strong { font-weight: 600; }
 
 .publication-list a { overflow-wrap: anywhere; }
 
 @media (max-width: 500px) {
-  .header-content { align-items: flex-start; flex-direction: column; gap: .6rem; }
   .publications-content { padding-top: 2rem; }
 }
